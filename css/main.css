@@ -1,0 +1,399 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 75%;
+    padding:0;
+    margin: auto;
+    font-size: 16px;
+    background-image: url("../images/y-so-serious-white.png");
+}
+
+/* Note the header nav is a modified version of Prof. Hur's*/
+header nav ul {
+    list-style: none;
+}
+
+header a:hover {
+    color: #f20d57;
+}
+
+nav a {
+    text-decoration: none;
+    border: 1px solid black;
+    display: inline-block;
+    width: 100px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+nav ul a:hover {
+    background-color: #f20d57;
+    color: #fff;
+}
+
+h1, h2 {
+    color: #f20d57;
+}
+
+p {
+    padding: 10px;
+}
+
+p.overview:first-letter {
+    font-size: 125%;
+}
+
+img.align-center {
+    display: block;
+    margin: 0px auto;
+    
+}
+
+input {
+    font-size: 120%;
+    color: #5a5854;
+    background-color: #f2f2f2;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    background-repeat: no-repeat;
+    display: block;
+    margin-bottom: 10px;
+    width: 500px;
+}
+
+input:focus, input:hover, textarea:focus, textarea:hover {
+    background-color: #fff;
+    border: 1px solid #b1e1e4;
+}
+
+textarea {
+    font-size: 120%;
+    color: #5a5854;
+    background-color: #f2f2f2;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    background-repeat: no-repeat;
+    display: block;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 120%;
+    padding: 5px 5px 5px 0px;
+}
+
+fieldset {
+    border: 1px solid #696969;
+    padding: 20px;
+    margin-top: 20px;
+    width: auto;
+}
+
+legend {
+    background-color: #f2f2f2;
+    border: 1px solid #696969;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+
+.submit {
+    font-size: 120%;
+    background-color: #2F4F4F;
+    border: 0px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.submit:hover {
+    background-color: #f20d57;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    text-align: center;
+    column-gap: 10px;
+}
+
+#intro-headshot {
+    background-color: black;
+    display: block;
+}
+
+
+
+#about-highlight {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    padding-left: 0px;
+    border: black;
+    border-radius: 10px;
+}
+
+.portfolio-highlight {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border: black;
+    border-radius: 10px;
+}
+
+.portfolio img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+h2.portfolio-highlight {
+    color: #fff;
+}
+
+li.highlight {
+    padding: 5px;
+}
+
+#app-figures {
+    border-color: #fff;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+  }
+
+aside {
+    font-style: italic;
+}
+
+#global-search-img {
+    width: auto;
+    height: auto;
+    display: block;
+    max-height: 500px;
+    max-width: 100%;
+}
+
+
+/* Small laptops */
+@media (max-width: 900px) {
+    /* Increase font height for better readability */
+    body {
+        font-size: 110%;
+    }
+
+    /* Adjust input and textarea on Contact form */
+    input, textarea {
+        width: 100%;
+    }
+
+    /* Adjusts the video on the Portfolio page*/
+    #salesforce-youtube {
+        width: auto;
+        height: auto;
+        display: block;
+        max-width: 600px;
+        margin: auto;
+    }
+}
+
+/* Tablets */
+@media (max-width:768px) {
+    /* Increase font height for better readability */
+    body {
+        line-height: 2em;
+        font-size: 120%;
+    }
+
+    /* Adjust input and textarea on Contact form */
+    input, textarea {
+        width: 100%;
+    }
+
+    /* Adjusts the video on the Portfolio page*/
+    #salesforce-youtube {
+        width: auto;
+        height: auto;
+        display: block;
+        max-width: 500px;
+        margin: auto;
+    }
+}
+
+/* Large Mobile Devices */
+@media (max-width:600px) {
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        column-gap: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        border: 1px solid black;
+        display: inline-block;
+        width: 75%;
+        padding: 5px;
+        border-radius: 4px;
+        margin: auto;
+    }
+
+    /* Increase font height for better readability */
+    body {
+        line-height: 2.2em;
+        font-size: 130%;
+    }
+
+    /* Adjust input and textarea on Contact form */
+    input, textarea {
+        width: 100%;
+    }
+
+    /* Adjusts the video on the Portfolio page*/
+    #salesforce-youtube {
+        width: auto;
+        height: auto;
+        display: block;
+        max-height: 281px;
+        max-width: 100%;
+    }
+}
+
+/* Home */
+
+.home-section {
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 0px rgba(0,0,0,.8);
+    text-align: center;
+}
+
+.resume-section {
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 0px rgba(0,0,0,.8);
+}
+
+.contact-section {
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 0px rgba(0,0,0,.8);
+}
+
+
+.home-highlight {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 10px 0px 10px;
+    margin: 1px 1px 1px 1px;
+    border: black;
+    border-radius: 10px;
+
+}
+
+.home-button {
+    padding: 10px;
+    margin: 10px;
+    background-color: #f20d57;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.interest-image {
+    max-width: 500px;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 80%;
+}
+
+
+#education {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.degree-item {
+    min-width:250px;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 5px; 
+}
+
+.company {
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.title {
+    padding-left: 10px;
+}
+
+.time {
+    padding-left: 10px;    
+    color: #A9A9A9;
+    font-size: 90%;
+}
+
+.highlight {
+    padding-left: 10px;
+    
+}
+
+.work {
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+
+.options-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    column-gap: 15px;
+}
+
+.options-list > li {
+    text-decoration: none;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0px rgba(0,0,0,.8);
+}
+
+section > p {
+    text-align: left;
+}
+
+#main-content {
+    padding: 20px;
+    margin: 20px; 
+    text-align: center;
+}

@@ -1,0 +1,23 @@
+{
+    "degrees" : [
+
+        {
+            "school": "Boston University",
+            "program": "Software Development",
+            "type": "MS",
+            "yearConferred": 2024
+        },
+        {
+            "school": "University of Nevada Las Vegas",
+            "program": "Economics",
+            "type": "MA",
+            "yearConferred": 2011
+        },
+        {
+            "school": "University of Nevada Las Vegas",
+            "program": "History",
+            "type": "BA",
+            "yearConferred": 2007
+        }
+    ]
+}

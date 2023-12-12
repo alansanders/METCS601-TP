@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Alan Sanders' Portfolio</title>
+
+        <!-- Meta tags -->
+        <meta charset="UTF-8">
+        <meta name="author" content="Alan Sanders">
+        <meta name="description" content="Portfolio page for Alan Sanders, Director of Marketing Operations at Caesars Entertainment, in Las Vegas, NV">
+        <meta name="keywords" content="Alan Sanders portfolio, projects, las vegas, Frontify search">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS -->
+        <link href="./CSS/main.css" rel="stylesheet">
+
+        <!-- JS -->
+        <script type="importmap">
+            {
+              "imports": {
+                "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+              }
+            }
+          </script>
+
+    </head>
+    <body>
+        <header>
+            <!-- Navigation -->
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./bio.html">Biography</a></li>
+                    <li><a href="./interests.html">Interests</a></li>
+                    <li><a href="./resume.html">Resume</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        <!-- Main -->
+        <main>
+            <section class="home-section">
+            <h1>Portfolio Projects</h1>
+            <script type="module">
+                import { createApp } from 'vue'
+                
+                createApp({
+                  data() {
+                    return {
+                      img: './images/caesars.jpg',
+                      description: "Hover over the images below to see different projects I've worked on.",
+                    }
+                },
+                methods: {
+                    onHover(number){
+                        switch (number){
+                            case 1:
+                                this.img = './images/frontify-global-search.png',
+                                this.title = 'Frontify Global Search',
+                                this.description = `I built a custom search engine for our digital asset management system, Frontify. Frontend was built using Flask and Bootstrap for CSS. Backend was developed using FastAPI to concurrently search Frontify. Search results return in less than a second. Greatly simplifying overall search times.`
+                                break;
+                            case 2:
+                                this.img = './images/salesforce.png',
+                                this.title = 'Caesars Entertainment Salesforce Implementation'
+                                this.description = 'Owned the product for the Workflow and Process team. Responsible for the offer build process. Learned Salesforce administration and performed configuration work. '
+                                break;
+                            case 3:
+                                this.img = './images/vppc2.png',
+                                this.title = 'Las Vegas Sands Mobile Apps'
+                                this.description = 'Procured software vendor and rolled out apps to 4 global properties: Las Vegas, Singapore, Macau, and Bethlehem, PA. Responsible for development of content, wayfinding, and implementation. Worked with property marketing teams on rollout and adoption.'
+                                break;
+                            case 4:
+                                this.img = './images/workfront.png',
+                                this.title = 'Caesars Entertainment Workfront Implementation'
+                                this.description = 'Led Workfront implementation for over 700 enterprise users. Delivered on-time and under budget. Saved the company over $200K in licensing costs.'
+                                break;
+                            default: {
+                                this.img = './images/caesars.jpg',
+                                this.title = "Hover over the images below to see different projects I've worked on."
+                                }
+                        }
+                            
+                    },
+                    onLeave(){
+                        this.img = './images/caesars.jpg',
+                        this.description = "Hover over the images below to see different projects I've worked on."
+                    }
+    
+                }
+                }).mount('#app')
+                </script>
+                
+                <div id="app">
+                    <div id="main-content">
+                        <img :src="img" height="500px">
+                        <p id=""><strong>Description:</strong> {{ description }}</p>
+                        <ul class="options-list">
+                            <li @mouseover="onHover(1)" @mouseleave="onLeave()"><img src="./images/thumbnail/frontify-thumbnail.png" alt="Logo for Frontify"></li>
+                            <li @mouseover="onHover(2)" @mouseleave="onLeave()"><img src="./images/thumbnail/salesforce-thumbnail.png" alt="Logo for Salesforce"></li>
+                            <li @mouseover="onHover(3)" @mouseleave="onLeave()"><img src="./images/thumbnail/workfront-thumbnail.png" alt="Logo for Workfront"></li>
+                            <li @mouseover="onHover(4)" @mouseleave="onLeave()"><img src="./images/thumbnail/venetian-thumbnail.png" alt="Logo for Venetian|Palazzo"></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        <br>
+        <footer>&copy; 2023 Alan Sanders</footer>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+{
+    "jobs" :[
+        {
+            "company": "Caesars Entertainment, Inc.",
+            "title": "Director - Marketing Operations",
+            "time": "February 2021 - Present (2 years 11 months)",
+            "highlights": "Product owner for Workfront and Salesforce (Force.com) responsible for product roadmap and feature prioritization for products that drive $1.2B in marketing campaigns and creative asset production."
+        },
+        {
+            "company": "Caesars Entertainment, Inc.",
+            "title": "Director - Marketing and Product Strategy",
+            "time": "August 2018 - February 2021 (2 years 7 months)",
+            "highlights": "Agile product owner with experience in both SCRUM and Kanban methodologies. Consistently meet with internal customers to define requirements, understand business processes, and provide roadmap presentations."
+        },
+        {
+            "company": "Caesars Entertainment, Inc.",
+            "title": "Director - Business Relationship Management",
+            "time": "January 2017 - July 2018 (1 year 7 months)",
+            "highlights": "Led as the strategic interface between the IT department and various business partners (Marketing, Finance, etc...) to stimulate, surface, and shape business demand for IT services."
+        },
+        {
+            "company": "The Venetian I The Palazzo, Resort Hotel & Casino I Las Vegas Sands Corp.",
+            "title": "Sr. Digital Marketing Manager",
+            "time": "January 2017 - July 2018 (1 year 7 months)",
+            "highlights": "Led various digial marketing initiatives to generate revenue from room boookings."
+        },
+        {
+            "company": "The Venetian I The Palazzo, Resort Hotel & Casino I Las Vegas Sands Corp.",
+            "title": "Manager - Product Management and Digital Marketing",
+            "time": "November 2010 - May 2015 (4 years 7 months)",
+            "highlights": "Responsible for managing the development and strategic direction of Las Vegas Sands’ mobile applications through identifying a global vendor, product discovery, and definition phases. Managed stakeholder interviews, requirements gathering, and feature prioritization. Worked with the property teams to drive hundreds of thousands of total downloads, and to utilize a new marketing channel to reach our guests (push notifications)."
+        },
+        {
+            "company": "The Venetian I The Palazzo, Resort Hotel & Casino I Las Vegas Sands Corp.",
+            "title": "Direct Marketing Analyst",
+            "time": "January 2010 - November 2010 (11 months)",
+            "highlights": "Responsible for reporting and analysis of direct marketing campaigns (email and direct mail). Provided data-driven recommendations to management on how to increase ROI and profitability. Used Showcase and SAS to manage lists and for direct marketing analysis."
+        }
+    ]
+}
+
